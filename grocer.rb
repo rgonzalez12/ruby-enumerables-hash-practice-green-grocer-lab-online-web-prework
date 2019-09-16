@@ -17,7 +17,7 @@ def apply_coupons(cart, coupons)
     item = coupon[:item]
     if cart.has_key?[item]
       if cart[item][:count] >= coupon[:num] && !cart.has_key?("#{item} W/COUPON")
-        
+        cart |
 end
 
 def apply_clearance(cart)
